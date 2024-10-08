@@ -1,15 +1,7 @@
 #include<stdio.h>
-#include"Books.h"
-#include"summay.h"
-#include"community.h"
-#include"workshops.h"
-#include"beiefits.h"
-#include"events.h"
-#include"lib_service.h"
-#include"resources.h"
-#include"join.h"
 
-void readBooks(){
+
+int readBooks(){
     FILE *bookFile = fopen("Books.txt","r");
     if(bookFile == NULL){
         printf("Error opening file\n");
@@ -22,7 +14,7 @@ void readBooks(){
     }
 }
 
-void viewResourcs(){
+int viewResourcs(){
     FILE *resourceFile = fopen("resources.txt","r");
     if(resourceFile == NULL){
         printf("Error opening file\n");
@@ -35,7 +27,7 @@ void viewResourcs(){
     }
 }
 
-void summary(){
+int summary(){
     FILE *summaryFile = fopen("summary.txt","r");
     if(summaryFile == NULL){
         printf("Error opening file\n");
@@ -47,7 +39,7 @@ void summary(){
     return 0;}
     }
 
-void events(){
+int events(){
     FILE *eventsFile = fopen("events.txt","r");
     if(eventsFile == NULL){
         printf("Error opening file\n");
@@ -60,7 +52,7 @@ void events(){
     }
 }
 
-void workshops(){
+int workshops(){
     FILE *workshopFile = fopen("workshop.txt","r");
     if(workshopFile == NULL){
         printf("Error opening file\n");
@@ -73,7 +65,7 @@ void workshops(){
     }
 }
 
-void community(){
+int community(){
     FILE *communityFile = fopen("community.txt","r");
     if(communityFile == NULL){
         printf("Error opening file\n");
@@ -86,7 +78,7 @@ void community(){
     }
 }
 
-void service(){
+int service(){
     FILE *ServiceFile = fopen("lib_service.txt","r");
     if(ServiceFile == NULL){
         printf("Error opening file\n");
@@ -99,7 +91,7 @@ void service(){
     }
 }
 
-void benefit(){
+int benefit(){
     FILE *benefitsFile = fopen("benefits.txt","r");
     if(benefitsFile == NULL){
         printf("Error opening file\n");
@@ -112,7 +104,7 @@ void benefit(){
     }
 }
 
-void joining(){
+int joining(){
     FILE *joinFile = fopen("join.txt","w");
     if(joinFile == NULL){
         printf("Error opening file\n");
@@ -139,7 +131,8 @@ char  passwrd[] = "passwrd";
 printf("1.Library Exploration. \n2.Event information\n3.Library Services Overview\nEnter the services service number:");
 scanf("%d", &service_num);
 
-if(service_num == 1)
+if(service_num == 1){
+
     printf("1.Browse catalog \n2. View available resources \n3. Read book summaries\n input the service number: ");
     scanf("%d",&sub_ser1);
 
@@ -163,9 +156,10 @@ if(service_num == 1)
     {
     printf("restart and enter a valid number");
     }
+}
 
 
-else if(service_num == 2)
+else if (service_num == 2){
     {
     printf("1 Explore upcoming library events\n2 workshops\3 community programs\n enter the service number:" );
     scanf("%d",&sub_ser2);
@@ -190,8 +184,9 @@ else if(service_num == 2)
     {
     printf("restart and enter a valid number");
     }
+}
 
-else if(service_num == '3')
+else if(service_num == '3'){
     printf("1 Library services\n2 Membership benefits\n3 How to join the library\n enter the");
     scanf("%d",&sub_ser3);
 
@@ -226,6 +221,7 @@ else if(service_num == '3')
     {
     printf("restart and enter a valid number");
     }
+}
 
 else
 {
