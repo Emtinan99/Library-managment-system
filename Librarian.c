@@ -1,8 +1,72 @@
 #include <stdio.h>
+#include <string.h>
 
-void librarian_login();
+void librarian_menu();
 
-int librarian_menu()
+void librarian_login()
+{
+    char correctUser[20] = "librarian", correctPass[20] = "librarianpass";
+    char user[20], pass[20], exit[2];
+
+    do{
+        printf("\nUsername: ");
+        scanf("%19s", user);
+
+        if(strcmp(user, correctUser) != 0)
+        {
+            printf("\nIncorrect Username. Would you like to try again? (y/n): ");
+            scanf("%1s", exit);
+
+            while(strcmp(exit, "y") != 0)
+            {
+                if(strcmp(exit, "n") == 0)
+                {
+                    printf("\nReturning to Login Page....\n");
+                    return;
+                }
+                else
+                {
+                    printf("\nInvalid entry. Please try again (y/n): ");
+                    scanf("%1s", exit);
+                }
+            }
+            continue;
+        }
+
+        printf("Password: ");
+        scanf("%19s", pass);
+
+        if (strcmp(pass, correctPass) == 0)
+        {
+            printf("\nLogin successful!\n");
+            librarian_menu();
+            return;
+        }
+
+        else
+        {
+            printf("\nIncorrect Password. Would you like to try again? (y/n): ");
+            scanf("%1s", exit);
+
+            while(strcmp(exit, "y") != 0)
+            {
+                if(strcmp(exit, "n") == 0)
+                {
+                    printf("\nReturning to Login Page....\n");
+                    return;
+                }
+                else
+                {
+                    printf("\nInvalid entry. Please try again (y/n): ");
+                    scanf("%1s", exit);
+                }
+            }
+            continue;
+        }
+    }while(1);
+}
+
+void librarian_menu()
 {
     int menu;
 
@@ -31,11 +95,10 @@ int librarian_menu()
             printf("\nthis has not been implemented yet\n");
             break;
         case 5:
-            return 0;
+            printf("\nThank you for using the Library Management System! Logging out...\n");
+            return;
         default:
             printf("\nInvalid choice. Please try again.\n");
         }
     }while(menu != 5);
-
-    return 1;
 }

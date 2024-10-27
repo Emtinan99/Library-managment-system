@@ -1,6 +1,6 @@
 #ifndef LIBRARY_MANAGEMENT_SYSTEM_H_INCLUDED
 #define LIBRARY_MANAGEMENT_SYSTEM_H_INCLUDED
 
-int librarian_menu();
+int librarian_login();
 
 #endif // LIBRARY_MANAGEMENT_SYSTEM_H_INCLUDED

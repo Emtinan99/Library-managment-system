@@ -3,7 +3,7 @@
 
 int main()
 {
-    int choice, loggedIn;
+    int choice;
 
     do{
         printf("\nLog in as:\n");
@@ -17,12 +17,7 @@ int main()
 
         switch (choice) {
             case 1:
-                loggedIn = librarian_menu();
-
-                if(loggedIn == 0)
-                {
-                    printf("\nLogging out...\n");
-                }
+                librarian_login();
                 break;
             case 2:
                 printf("\npls call the login function from library staff after you finish implementing it\n");
