@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "Library Management System.h"
 
 int main()
 {
-    int login;
+    int choice, loggedIn;
 
     do{
         printf("\nLog in as:\n");
@@ -12,11 +13,16 @@ int main()
         printf("4. Guest\n");
         printf("5. Exit Program\n");
         printf("\nEnter your choice: ");
-        scanf("%d", &login);
+        scanf("%d", &choice);
 
-        switch (login) {
+        switch (choice) {
             case 1:
-                printf("\nWill implement librarian stuff later teehee <3\n");
+                loggedIn = librarian_menu();
+
+                if(loggedIn == 0)
+                {
+                    printf("\nLogging out...\n");
+                }
                 break;
             case 2:
                 printf("\npls call the login function from library staff after you finish implementing it\n");
@@ -34,5 +40,5 @@ int main()
                 printf("\nInvalid choice. Please try again.\n");
         }
 
-    }while(login != 5);
+    }while(choice != 5);
 }
