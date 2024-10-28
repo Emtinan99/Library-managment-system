@@ -2,5 +2,6 @@
 #define LIBRARY_MANAGEMENT_SYSTEM_H_INCLUDED
 
 int librarian_login();
+void guest_menu();
 
 #endif // LIBRARY_MANAGEMENT_SYSTEM_H_INCLUDED

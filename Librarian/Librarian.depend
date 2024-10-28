@@ -3,9 +3,29 @@
 	<stdio.h>
 	<string.h>
 
-1730085764 source:c:\users\isha\onedrive\documents\github\library-managment-system\main.c
+1730095768 source:c:\users\isha\onedrive\documents\github\library-managment-system\main.c
 	<stdio.h>
 	"Library Management System.h"
 
-1730012235 c:\users\isha\onedrive\documents\github\library-managment-system\library management system.h
+1730097737 c:\users\isha\onedrive\documents\github\library-managment-system\library management system.h
+
+1730098188 source:c:\users\isha\onedrive\documents\github\library-managment-system\guest\guest.c
+	<stdio.h>
+	<string.h>
+
+1730088341 source:c:\users\isha\onedrive\documents\github\library-managment-system\librarian\librarian_books.c
+	<stdio.h>
+
+1730088342 source:c:\users\isha\onedrive\documents\github\library-managment-system\librarian\librarian_borrows.c
+	<stdio.h>
+
+1730088542 source:c:\users\isha\onedrive\documents\github\library-managment-system\librarian\librarian_main.c
+	<stdio.h>
+	<string.h>
+	"Combined_Librarian.h"
+
+1730087572 c:\users\isha\onedrive\documents\github\library-managment-system\librarian\combined_librarian.h
+
+1730088341 source:c:\users\isha\onedrive\documents\github\library-managment-system\librarian\librarian_members.c
+	<stdio.h>
 

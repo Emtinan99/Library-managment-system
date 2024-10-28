@@ -32,7 +32,7 @@ int main()
                 printf("\npls call the login function from library member\n");
                 break;
             case 4:
-                printf("\npls call the main menu function for guest\n");
+                guest_menu();
                 break;
             case 5:
                 printf("\nThank you for using our Library Management system!\nExiting now....\n");
