@@ -31,11 +31,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../Guest/Guest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Guest/benefits.txt" />
+		<Unit filename="../Guest/community.txt" />
+		<Unit filename="../Guest/events.txt" />
+		<Unit filename="../Guest/join.txt" />
+		<Unit filename="../Guest/lib_service.txt" />
+		<Unit filename="../Guest/resources.txt" />
+		<Unit filename="../Guest/workshop.txt" />
 		<Unit filename="../Library Management System.h" />
 		<Unit filename="../Main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../books.txt" />
+		<Unit filename="../summary.txt" />
 		<Unit filename="Combined_Librarian.h" />
 		<Unit filename="Librarian_Books.c">
 			<Option compilerVar="CC" />
