@@ -31,11 +31,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../Librarian.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="../Library Management System.h" />
 		<Unit filename="../Main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../books.txt" />
+		<Unit filename="Combined_Librarian.h" />
+		<Unit filename="Librarian_Books.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Librarian_Borrows.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Librarian_Main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Librarian_Members.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>

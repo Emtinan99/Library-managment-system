@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1730085561 source:c:\users\isha\onedrive\documents\github\library-managment-system\librarian.c
+	<stdio.h>
+	<string.h>
+
+1730085764 source:c:\users\isha\onedrive\documents\github\library-managment-system\main.c
+	<stdio.h>
+	"Library Management System.h"
+
+1730012235 c:\users\isha\onedrive\documents\github\library-managment-system\library management system.h
+

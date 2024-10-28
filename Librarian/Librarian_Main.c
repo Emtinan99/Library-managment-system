@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <string.h>
+#include "Combined_Librarian.h"
 
 void librarian_menu();
+void generate_report();
 
 void librarian_login()
 {
@@ -78,21 +80,27 @@ void librarian_menu()
         printf("4. Generate Report\n");
         printf("5. Logout\n");
         printf("\nEnter your choice: ");
-        scanf("%d", &menu);
+
+        if (scanf("%d", &menu) != 1)
+        {
+            printf("\nInvalid input. Please enter a number.\n");
+            while (getchar() != '\n');
+            continue;
+        }
 
         switch (menu)
         {
         case 1:
-            printf("\nthis has not been implemented yet\n");
+            books_menu();
             break;
         case 2:
-            printf("\nthis has not been implemented yet\n");
+            members_menu();
             break;
         case 3:
-            printf("\nthis has not been implemented yet\n");
+            borrowings_menu();
             break;
         case 4:
-            printf("\nthis has not been implemented yet\n");
+            generate_report();
             break;
         case 5:
             printf("\nThank you for using the Library Management System! Logging out...\n");
@@ -101,4 +109,9 @@ void librarian_menu()
             printf("\nInvalid choice. Please try again.\n");
         }
     }while(menu != 5);
+}
+
+void generate_report()
+{
+    printf("report generated :P");
 }
