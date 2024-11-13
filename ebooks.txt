@@ -1,0 +1,3 @@
+The Great Gatsby,8,10.00
+1984,4,8.00
+To Kill a Mockingbird,0,12.00

@@ -1,0 +1,3 @@
+Journal of Computer Science,10,5.00
+International Journal of Artificial Intelligence,5,7.50
+Journal of Software Engineering,0,6.00

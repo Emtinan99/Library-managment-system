@@ -1,11 +1,6 @@
-crime in the blue train - agatha cristy
-crime and punishment - fyodor dostoyvsky
-no longer human - dazai osamu
-the stranger - albert camus
-the great gatsby - f scott fitzgerald
-to kill a mockingbird -  harper lee
-the sound and the fury - william faulkner
-the old man and the sea - ernest hemingway
-the picture of dorian gray - oscar wilde
-the turn of the screw - henry james
-the secret agent - joseph conrad
+The Great Gatsby,19
+To Kill a Mockingbird,23
+1984,20
+A Brief History of Time,15
+The Catcher in the Rye,16
+The Art of War,14
