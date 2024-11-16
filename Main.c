@@ -29,7 +29,7 @@ int main()
                 printf("\npls call the login function from library staff after you finish implementing it\n");
                 break;
             case 3:
-                printf("\npls call the login function from library member\n");
+                member_login();
                 break;
             case 4:
                 guest_menu();
