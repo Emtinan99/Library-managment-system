@@ -13,8 +13,10 @@
 	<stdio.h>
 	<string.h>
 
-1731725177 source:c:\users\isha\onedrive\documents\github\library-managment-system\librarian\librarian_books.c
+1731729090 source:c:\users\isha\onedrive\documents\github\library-managment-system\librarian\librarian_books.c
 	<stdio.h>
+	<string.h>
+	"clear_screen.h"
 
 1731725177 source:c:\users\isha\onedrive\documents\github\library-managment-system\librarian\librarian_borrows.c
 	<stdio.h>
@@ -54,4 +56,6 @@
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+
+1731729012 c:\users\isha\onedrive\documents\github\library-managment-system\librarian\clear_screen.h
 

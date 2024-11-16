@@ -71,6 +71,7 @@
 		<Unit filename="Member/librarymember.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="account.txt" />
 		<Unit filename="accounthistory.txt" />
 		<Unit filename="audiobooks.txt" />
 		<Unit filename="benefits.txt" />
