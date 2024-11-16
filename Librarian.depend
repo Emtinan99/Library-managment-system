@@ -3,7 +3,7 @@
 	<stdio.h>
 	<string.h>
 
-1731729012 source:c:\users\isha\onedrive\documents\github\library-managment-system\main.c
+1731741531 source:c:\users\isha\onedrive\documents\github\library-managment-system\main.c
 	<stdio.h>
 	"Library Management System.h"
 
@@ -26,7 +26,7 @@
 	<string.h>
 	"Combined_Librarian.h"
 
-1731726192 c:\users\isha\onedrive\documents\github\library-managment-system\librarian\combined_librarian.h
+1731741531 c:\users\isha\onedrive\documents\github\library-managment-system\librarian\combined_librarian.h
 
 1731725177 source:c:\users\isha\onedrive\documents\github\library-managment-system\librarian\librarian_members.c
 	<stdio.h>
@@ -58,4 +58,10 @@
 	<string.h>
 
 1731729012 c:\users\isha\onedrive\documents\github\library-managment-system\librarian\clear_screen.h
+
+1731741531 source:c:\users\isha\onedrive\documents\github\library-managment-system\staff\staff.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<time.h>
 

@@ -31,7 +31,7 @@ int main()
                 librarian_login();
                 break;
             case 2:
-                printf("\npls call the login function from library staff after you finish implementing it\n");
+                staff_menu();
                 break;
             case 3:
                 member_login();

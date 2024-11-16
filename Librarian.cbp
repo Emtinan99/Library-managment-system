@@ -34,8 +34,6 @@
 		<Unit filename="Guest/Guest.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Librarian.cbp" />
-		<Unit filename="Librarian.depend" />
 		<Unit filename="Librarian.layout" />
 		<Unit filename="Librarian/Combined_Librarian.h" />
 		<Unit filename="Librarian/Librarian_Books.c">
@@ -52,7 +50,6 @@
 		</Unit>
 		<Unit filename="Librarian/clear_screen.h" />
 		<Unit filename="Library Management System.h" />
-		<Unit filename="Library Management System.h.gch" />
 		<Unit filename="Main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -71,6 +68,9 @@
 		<Unit filename="Member/librarymember.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Staff/Staff.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="account.txt" />
 		<Unit filename="accounthistory.txt" />
 		<Unit filename="audiobooks.txt" />
@@ -82,7 +82,9 @@
 		<Unit filename="events.txt" />
 		<Unit filename="join.txt" />
 		<Unit filename="lib_service.txt" />
+		<Unit filename="members.txt" />
 		<Unit filename="online_journals.txt" />
+		<Unit filename="reservations.txt" />
 		<Unit filename="resources.txt" />
 		<Unit filename="summary.txt" />
 		<Unit filename="workshop.txt" />
