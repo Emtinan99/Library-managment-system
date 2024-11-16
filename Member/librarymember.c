@@ -75,7 +75,7 @@ void member_login() {
                 break;
             case 5:
                 printf("Exiting the program.\n");
-                member_login(); // Exit the function instead of calling member_login again
+                return;
             default:
                 printf("Invalid choice. Please enter a number between 1 and 5.\n");
                 break; // Add break to avoid fall-through

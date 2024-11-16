@@ -2,7 +2,7 @@
 #include<string.h>
 
 void readBooks() {
-    FILE *bookFile = fopen("Books.txt", "r");  // Open for reading
+    FILE *bookFile = fopen("books.txt", "r");  // Open for reading
     if (bookFile == NULL) {
         printf("Error opening file.");
         return;

@@ -31,35 +31,60 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../Guest/Guest.c">
+		<Unit filename="Guest/Guest.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../Guest/benefits.txt" />
-		<Unit filename="../Guest/community.txt" />
-		<Unit filename="../Guest/events.txt" />
-		<Unit filename="../Guest/join.txt" />
-		<Unit filename="../Guest/lib_service.txt" />
-		<Unit filename="../Guest/resources.txt" />
-		<Unit filename="../Guest/workshop.txt" />
-		<Unit filename="../Library Management System.h" />
-		<Unit filename="../Main.c">
+		<Unit filename="Librarian.cbp" />
+		<Unit filename="Librarian.depend" />
+		<Unit filename="Librarian.layout" />
+		<Unit filename="Librarian/Combined_Librarian.h" />
+		<Unit filename="Librarian/Librarian_Books.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../books.txt" />
-		<Unit filename="../summary.txt" />
-		<Unit filename="Combined_Librarian.h" />
-		<Unit filename="Librarian_Books.c">
+		<Unit filename="Librarian/Librarian_Borrows.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Librarian_Borrows.c">
+		<Unit filename="Librarian/Librarian_Main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Librarian_Main.c">
+		<Unit filename="Librarian/Librarian_Members.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Librarian_Members.c">
+		<Unit filename="Librarian/clear_screen.h" />
+		<Unit filename="Library Management System.h" />
+		<Unit filename="Library Management System.h.gch" />
+		<Unit filename="Main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Member/accountmanagement.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Member/book_reccomendation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Member/book_search.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Member/digitallibrary.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Member/librarymember.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="accounthistory.txt" />
+		<Unit filename="audiobooks.txt" />
+		<Unit filename="benefits.txt" />
+		<Unit filename="book_recomendation.txt" />
+		<Unit filename="books.txt" />
+		<Unit filename="community.txt" />
+		<Unit filename="ebooks.txt" />
+		<Unit filename="events.txt" />
+		<Unit filename="join.txt" />
+		<Unit filename="lib_service.txt" />
+		<Unit filename="online_journals.txt" />
+		<Unit filename="resources.txt" />
+		<Unit filename="summary.txt" />
+		<Unit filename="workshop.txt" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

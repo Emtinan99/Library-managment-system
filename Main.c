@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "Library Management System.h"
 
+void clear_screen(int seconds)
+{
+    sleep(seconds);
+    system("cls");
+}
 int main()
 {
     int choice;
