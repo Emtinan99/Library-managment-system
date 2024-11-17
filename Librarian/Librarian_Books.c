@@ -187,9 +187,7 @@ void update_book()
 
     if(found)
     {
-        printf("%-4s | %-30s | %-20s | %-16s | %-15s\n", "ID", "Title", "Author", "Available Copies", "E-book Available");
-        printf("-----------------------------------------------------------------------------------------------------\n");
-        printf("%04d | %-30s | %-20s | %-16d | %-15s\n", books[findidx].book_id, books[findidx].title, books[findidx].author, books[findidx].copies, books[findidx].ebook);
+        printf("ID: %d\nTitle: %s\nAuthor: %s\nCopies: %d\nEbook: %s\n", books[findidx].book_id, books[findidx].title, books[findidx].author, books[findidx].copies, books[findidx].ebook);
 
         do{
             printf("\nChoose a field to update:\n");
@@ -292,8 +290,7 @@ void delete_book() {
 
             // Display book information
             printf("\nBook found:\n");
-            printf("ID: %d\nTitle: %s\nAuthor: %s\nCopies: %d\nEbook: %s\n",
-                   books[i].book_id, books[i].title, books[i].author, books[i].copies, books[i].ebook);
+            printf("ID: %d\nTitle: %s\nAuthor: %s\nCopies: %d\nEbook: %s\n", books[i].book_id, books[i].title, books[i].author, books[i].copies, books[i].ebook);
 
             // Prompt for confirmation with input validation
             char confirm[2];
