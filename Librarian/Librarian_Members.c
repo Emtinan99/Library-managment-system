@@ -41,3 +41,8 @@ void members_menu()
         }
     }while(choice != 5);
 }
+
+void add_member()
+{
+
+}
