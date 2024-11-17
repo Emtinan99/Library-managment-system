@@ -28,7 +28,7 @@ int main()
 
         switch (choice) {
             case 1:
-                librarian_login();
+                books_menu();
                 break;
             case 2:
                 staff_menu();

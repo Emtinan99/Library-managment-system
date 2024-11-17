@@ -2,9 +2,10 @@
 #include <string.h>
 #include "clear_screen.h"
 
-void add_book();
+void add_books();
 void view_books();
 void update_book();
+void delete_book();
 
 struct Book
 {
@@ -39,16 +40,16 @@ void books_menu()
         switch (choice)
         {
         case 1:
-            printf("\nthis has not been implemented yet\n");
+            add_books();
             break;
         case 2:
-            printf("\nthis has not been implemented yet\n");
+            view_books();
             break;
         case 3:
-            printf("\nthis has not been implemented yet\n");
+            update_book();
             break;
         case 4:
-            printf("\nthis has not been implemented yet\n");
+            delete_book();
             break;
         case 5:
             return;
@@ -141,9 +142,11 @@ void view_books()
 
     printf("\nPress 'Enter' to go back...");
     getchar();
+    getchar();
 
     printf("\nLoading previous menu...");
     clear_screen(1);
+
 }
 
 void update_book()
@@ -259,5 +262,77 @@ void update_book()
         printf("\nBook ID was not found. Please try again.\n\n");
         clear_screen(1);
         return;
+    }
+}
+
+void delete_book() {
+    struct Book books[100];
+    char line[256];
+    int id, idx = 0, found = 0;
+
+    FILE *file = fopen("books.txt", "r");
+    if (file == NULL) {
+        printf("Error opening file.\n");
+        return;
+    }
+
+    while (fgets(line, sizeof(line), file)) {
+        sscanf(line, "%d, %99[^,], %99[^,], %d, %3s", &books[idx].book_id, books[idx].title, books[idx].author, &books[idx].copies, books[idx].ebook);
+        idx++;
+    }
+    fclose(file);
+
+    printf("\nEnter book ID to delete: ");
+    scanf("%d", &id);
+    getchar();
+
+    for (int i = 0; i < idx; i++) {
+        if (books[i].book_id == id) {
+            found = 1;
+
+            // Display book information
+            printf("\nBook found:\n");
+            printf("ID: %d\nTitle: %s\nAuthor: %s\nCopies: %d\nEbook: %s\n",
+                   books[i].book_id, books[i].title, books[i].author, books[i].copies, books[i].ebook);
+
+            // Prompt for confirmation with input validation
+            char confirm[2];
+            printf("\nAre you sure you want to delete this book? (y/n): ");
+            scanf("%1s", confirm);
+
+            while (strcmp(confirm, "y") != 0) {
+                if (strcmp(confirm, "n") == 0) {
+                    printf("\nBook deletion canceled.\n");
+                    return;
+                } else {
+                    printf("\nInvalid entry. Please try again (y/n): ");
+                    scanf("%1s", confirm);
+                }
+            }
+
+            // If confirmed to delete
+            for (int j = i; j < idx - 1; j++) {
+                books[j] = books[j + 1]; // Shift books down
+            }
+            idx--; // Reduce the count of books
+
+            // Write the updated list back to the file
+            file = fopen("books.txt", "w");
+            if (file == NULL) {
+                printf("Error opening file.\n");
+                return;
+            }
+
+            for (int j = 0; j < idx; j++) {
+                fprintf(file, "%d, %s, %s, %d, %s\n", books[j].book_id, books[j].title, books[j].author, books[j].copies, books[j].ebook);
+            }
+            fclose(file);
+            printf("\nBook deleted successfully!\n");
+            break;
+        }
+    }
+
+    if (!found) {
+        printf("\nBook ID was not found. Please try again.\n\n");
     }
 }

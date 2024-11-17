@@ -7,6 +7,7 @@
 #define TITLE_LEN 100
 
 typedef struct {
+    int id; // New field for book ID
     char title[TITLE_LEN];
     int available_copies;
 } Book;
@@ -34,8 +35,8 @@ int load_books_from_file(const char *filename, Book library[]) {
     }
 
     int count = 0;
-    // Updated format to read title and available copies
-    while (count < MAX_BOOKS && fscanf(file, "%99[^,],%d\n", library[count].title, &library[count].available_copies) == 2) {
+    // Updated format to read id, title, and available copies
+    while (count < MAX_BOOKS && fscanf(file, "%d,%99[^,],%d\n", &library[count].id, library[count].title, &library[count].available_copies) == 3) {
         count++;
     }
 
@@ -88,13 +89,14 @@ void search_books(Book library[], int book_count) {
 
         if (strcmp(title_lower, search_lower) == 0) { // Compare with trimmed title
             found = 1;
+            printf("Book ID: %d\n", library[i].id); // Display the book ID
             printf("Book Title: %s\n", library[i].title);
             printf("Available Copies: %d\n", library[i].available_copies);
 
             if (library[i].available_copies > 0) {
                 char reserve_choice;
                 printf("Would you like to reserve this book? (y/n): ");
-                scanf(" %c", &reserve_choice); // Note the space before %c to consume any leftover newline
+                scanf(" %c", &reserve_choice);
 
                 // Validate reserve choice
                 while (reserve_choice != 'y' && reserve_choice != 'Y' && reserve_choice != 'n' && reserve_choice != 'N') {
@@ -112,7 +114,7 @@ void search_books(Book library[], int book_count) {
             } else {
                 printf("Sorry, this book is currently not available for borrowing.\n");
             }
-            break;
+            break; // Exit the loop after finding the book
         }
     }
     if (!found) {
