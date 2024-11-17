@@ -1,13 +1,6 @@
-1, crime in the blue train, agatha cristy,11, No,0
-2, crime and punishment, fyodor dostoyvsky,28, Yes,0
-3, no longer human, dazai Osamu,0, Yes,0
-4, the stranger, albert camus,4, No,0
-5, the great gatsby, f scott fitzgerald,39, Yes,0
-6, to kill a mockingbird, harper lee,23, No,0
-7, the sound and the fury, william Faulkner,12, Yes,0
-8, the old man and the sea, ernest hemingway,9, No,0
-9, the picture of dorian gray, oscar wilde,19, Yes,0
-10, the turn of the screw, henry james,4, No,0
-11, the secret agent, joseph conrad,21, No,0
-12, The Priory of the Orange Tree, Samantha Shannon,30, Yes,0
-13, help, period,2, Yes,0
+1234,The Great Gatsby,19
+2908,To Kill a Mockingbird,23
+3345,1984,20
+4567,A Brief History of Time,15
+5111,The Catcher in the Rye,16
+6555,The Art of War,14
