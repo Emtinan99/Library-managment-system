@@ -2,3 +2,5 @@ Name: ishamaumoon, Books Borrowed: The Great Gatsby, Due Date: 19-07-2025, Overd
 Name: emyismalika, Books Borrowed: 1984, Due Date: 15-08-2025, Overdue Fees: 1.50
 Name: ahlambebe, Books Borrowed: To Kill a Mockingbird, Due Date: 10-09-2025, Overdue Fees: 0.00
 Name: syazanahuhu, Books Borrowed: To Kill a Mockingbird, Due Date: 10-09-2025, Overdue Fees: 15.00
+Username: %d, Book ID: 1234, Title: The Great Gatsby
+Username: %d, Book ID: 3345, Title: 1984
